@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive Form</title>
+<style>
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, sans-serif;
+}
+body {
+background-color: #f0f0f5;
+color: #333;
+padding: 20px;
+}
+.container {
+max-width: 800px;
+margin: 0 auto;
+background-color: #fff;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+button {
+padding: 10px 20px;
+margin-top: 10px;
+background-color: #4caf50;
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+button:hover {
+background-color: #45a049;
+}
+form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+form input {
+padding: 10px;
+font-size: 1rem;
+border: 1px solid #ccc;
+border-radius: 4px;
+}
+#formResult {
+margin-top: 20px;
+font-size: 1rem;
+}
+ul {
+list-style-type: none;
+padding: 0;
+margin: 20px 0;
+}
+ul li {
+background-color: #e0e0e0;
+margin: 5px 0;
+padding: 10px;
+border-radius: 4px;
+display: flex;
+justify-content: space-between;
+}
+ul li span {
+font-weight: bold;
+}
+ul li button {
+background-color: #f44336;
+border: none;
+color: white;
+padding: 5px 10px;
+border-radius: 4px;
+cursor: pointer;
+}
+#bg-button {
+margin-bottom: 10px;
+}
+ul li button:hover {
+background-color: #d32f2f;
+}
+#hoverDiv {
+padding: 20px;
+text-align: center;
+background-color: #f9f9f9;
+border: 1px solid #ccc;
+border-radius: 8px;
+margin-top: 20px;
+transition: background-color 0.3s;
+}
+#hoverDiv:hover {
+background-color: #e3e3e3;
+}
+.reset {
+margin-top: 20px;
+background-color: #2196f3;
+}
+.reset:hover {
+background-color: #1976d2;
+}
+/* General container styling */
+.container {
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+font-family: Arial, sans-serif;
+}
+h1 {
+text-align: center;
+color: #333;
+}
+/* Form styling */
+form {
+margin-bottom: 20px;
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+form input {
+flex: 1;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+font-size: 14px;
+}
+form button {
+padding: 10px 20px;
+background-color: #007bff;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+form button:hover {
+background-color: #0056b3;
+}
+/* Table styling */
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+background-color: #f9f9f9;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+thead th {
+background-color: #007bff;
+color: #fff;
+padding: 10px;
+text-align: left;
+font-weight: bold;
+}
+tbody td {
+padding: 10px;
+border: 1px solid #ddd;
+}
+tbody tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+tbody tr:hover {
+background-color: #e0e7ff;
+}
+/* Reset button styling */
+button#resetButton {
+margin-top: 20px;
+padding: 10px 20px;
+background-color: #dc3545;
+color: #fff;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-size: 16px;
+}
+button#resetButton:hover {
+background-color: #a71d2a}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Interactive User Form</h1>
+<button id="bg-button">Change Background Color</button>
+<form id="textForm">
+<input type="text" id="nameInput" placeholder="Enter your name" />
+<input type="email" id="emailInput" placeholder="Enter your email" />
+<input type="password" id="passwordInput" placeholder="Enter your password"
+ />
+<input type="tel" id="phoneInput" placeholder="Enter your phone number" 
+/>
+<button type="submit">Submit</button>
+</form>
+<div id="formResult"></div>
+<ul id="list">
+<li><span>user1@emsi.ma</span> <button>Remove</button></li>
+<li><span>user2@emsi.ma</span> <button>Remove</button></li>
+<li><span>user3@emsi.ma</span> <button>Remove</button></li>
+</ul>
+<div id="hoverDiv">Hover over me!</div>
+<button id="resetButton" class="reset">Reset</button>
+</div>
+<script src="script.js"> </script>
+</body>
+</html>
